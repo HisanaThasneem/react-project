@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TextField, Button, Container, Typography } from '@mui/material';
 
-const AddProduct = () => {
+const Addproduct = () => {
   const [product, setProduct] = useState({
     name: '',
     image: '',
@@ -66,4 +66,4 @@ const AddProduct = () => {
   );
 };
 
-export default AddProduct;
+export default Addproduct;

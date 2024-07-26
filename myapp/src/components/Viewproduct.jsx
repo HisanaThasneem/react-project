@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Grid, Card, CardContent, Typography, CardMedia, CircularProgress, Box, Alert } from '@mui/material';
 
-const ViewProduct = () => {
+const Viewproduct = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -20,7 +20,11 @@ const ViewProduct = () => {
   }, []);
 
   if (loading) {
-    return <CircularProgress />;
+    return (
+      <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
+        <CircularProgress />
+      </Box>
+    );
   }
 
   if (error) {
@@ -56,4 +60,4 @@ const ViewProduct = () => {
   );
 };
 
-export default ViewProduct;
+export default Viewproduct;
